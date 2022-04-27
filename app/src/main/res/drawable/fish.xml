@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--oneshot表示是否重复播放，false表示需要重复播放-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <!--用item分别表示每一帧。drawable表示当前帧的图片资源，duration表示当前帧的持续时间-->
+    <item
+        android:drawable="@drawable/a01"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a02"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a03"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a04"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a05"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a06"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a07"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a08"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a09"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a10"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a11"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a12"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a13"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a14"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a15"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/a16"
+        android:duration="120" />
+</animation-list>
