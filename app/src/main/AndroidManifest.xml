@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimatorDemo">
-        <activity android:name=".FrameAnimationActivity"></activity>
+        <activity android:name=".ThirdPartyTweenAnimationActivity"></activity>
+        <activity android:name=".NormalTweenAnimationActivity" />
+        <activity android:name=".BaseFrameAnimationActivity" />
+        <activity android:name=".TweenAnimationActivity" />
+        <activity android:name=".FrameAnimationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

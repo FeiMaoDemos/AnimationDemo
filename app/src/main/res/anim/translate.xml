@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 定义一个从View当前位置向右移动500像素的动画 -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0"
+    android:fromYDelta="0"
+    android:toXDelta="500"
+    android:toYDelta="0" />

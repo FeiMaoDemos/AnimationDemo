@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--透明度动画与位移动画同时执行-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="false"
+    android:fillBefore="false"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:repeatCount="10"
+    android:repeatMode="reverse"
+    android:shareInterpolator="true"
+    android:startOffset="0">
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="100"
+        android:toYDelta="0" />
+
+    <!--  定义startOffset的目的，是让两个动画可以看上去顺序执行，所以让第二个动画延迟1000ms  -->
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="1"
+        android:startOffset="1000"
+        android:toAlpha="0" />
+</set>

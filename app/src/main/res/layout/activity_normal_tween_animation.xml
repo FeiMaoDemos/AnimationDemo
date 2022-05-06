@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NormalTweenAnimationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/alpha_xml_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:onClick="alphaXmlDemo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/alpha_code_demo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/alpha_code_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="#ff0000"
+            android:onClick="alphaCodeDemo"
+            app:layout_constraintLeft_toRightOf="@id/alpha_xml_demo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/alpha_xml_demo" />
+
+        <TextView
+            android:id="@+id/alpha_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="透明度动画演示"
+            app:layout_constraintLeft_toLeftOf="@id/alpha_xml_demo"
+            app:layout_constraintRight_toRightOf="@id/alpha_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/alpha_xml_demo" />
+
+
+        <View
+            android:id="@+id/scale_xml_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:onClick="scaleXmlDemo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/scale_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/alpha_demo_title" />
+
+        <View
+            android:id="@+id/scale_code_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="#ff0000"
+            android:onClick="scaleCodeDemo"
+            app:layout_constraintLeft_toRightOf="@id/scale_xml_demo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/scale_xml_demo" />
+
+        <TextView
+            android:id="@+id/scale_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="缩放动画演示"
+            app:layout_constraintLeft_toLeftOf="@id/scale_xml_demo"
+            app:layout_constraintRight_toRightOf="@id/scale_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/scale_xml_demo" />
+
+
+        <View
+            android:id="@+id/translate_xml_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:onClick="translateXmlDemo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/translate_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/scale_demo_title" />
+
+        <View
+            android:id="@+id/translate_code_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="#ff0000"
+            android:onClick="translateCodeDemo"
+            app:layout_constraintLeft_toRightOf="@id/translate_xml_demo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/translate_xml_demo" />
+
+        <TextView
+            android:id="@+id/translate_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="平移动画演示"
+            app:layout_constraintLeft_toLeftOf="@id/translate_xml_demo"
+            app:layout_constraintRight_toRightOf="@id/translate_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/translate_xml_demo" />
+
+
+        <View
+            android:id="@+id/rotate_xml_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:onClick="rotateXmlDemo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/rotate_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/translate_demo_title" />
+
+        <View
+            android:id="@+id/rotate_code_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="#ff0000"
+            android:onClick="rotateCodeDemo"
+            app:layout_constraintLeft_toRightOf="@id/rotate_xml_demo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rotate_xml_demo" />
+
+        <TextView
+            android:id="@+id/rotate_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="旋转动画演示"
+            app:layout_constraintLeft_toLeftOf="@id/rotate_xml_demo"
+            app:layout_constraintRight_toRightOf="@id/rotate_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/rotate_xml_demo" />
+
+
+        <View
+            android:id="@+id/set_xml_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:onClick="setXmlDemo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/set_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/rotate_demo_title" />
+
+        <View
+            android:id="@+id/set_code_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="#ff0000"
+            android:onClick="setCodeDemo"
+            app:layout_constraintLeft_toRightOf="@id/set_xml_demo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/set_xml_demo" />
+
+        <TextView
+            android:id="@+id/set_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="组合动画演示"
+            app:layout_constraintLeft_toLeftOf="@id/set_xml_demo"
+            app:layout_constraintRight_toRightOf="@id/set_code_demo"
+            app:layout_constraintTop_toBottomOf="@id/set_xml_demo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

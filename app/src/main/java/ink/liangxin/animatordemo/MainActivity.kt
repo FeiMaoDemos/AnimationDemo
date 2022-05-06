@@ -1,10 +1,13 @@
 package ink.liangxin.animatordemo
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import ink.liangxin.animatordemo.PageUtils.Companion.gotoActivity
 
+/**
+ * 主界面
+ * */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +23,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * 根据给定Activity类型来启动Activity
+     * 启动补间动画布局
      * */
-    private fun gotoActivity(activityClass: Class<*>) {
-        startActivity(Intent(this, activityClass))
+    fun tweenAnimation(view: View) {
+        gotoActivity(TweenAnimationActivity::class.java)
     }
+
 }

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseFrameAnimationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="startDurationAnimation">
+
+                <View
+                    android:id="@+id/duration1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#ff0000"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/duration1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="@id/duration1"
+                    app:layout_constraintTop_toBottomOf="@id/duration1" />
+
+                <View
+                    android:id="@+id/duration2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ff0000"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/duration1_title" />
+
+                <TextView
+                    android:id="@+id/duration2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="@id/duration2"
+                    app:layout_constraintRight_toRightOf="@id/duration2"
+                    app:layout_constraintTop_toBottomOf="@id/duration2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startFillAnimation">
+
+                <View
+                    android:id="@+id/no_fill"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#00ff00"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/no_fill_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="no_fill"
+                    app:layout_constraintLeft_toLeftOf="@id/no_fill"
+                    app:layout_constraintRight_toRightOf="@id/no_fill"
+                    app:layout_constraintTop_toBottomOf="@id/no_fill" />
+
+                <View
+                    android:id="@+id/fillAfter"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00ff00"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/no_fill_title" />
+
+                <TextView
+                    android:id="@+id/fillAfter_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="fillAfter"
+                    app:layout_constraintLeft_toLeftOf="@id/fillAfter"
+                    app:layout_constraintRight_toRightOf="@id/fillAfter"
+                    app:layout_constraintTop_toBottomOf="@id/fillAfter" />
+
+                <View
+                    android:id="@+id/fillBefore"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00ff00"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fillAfter_title" />
+
+                <TextView
+                    android:id="@+id/fillBefore_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="fillBefore"
+                    app:layout_constraintLeft_toLeftOf="@id/fillBefore"
+                    app:layout_constraintRight_toRightOf="@id/fillBefore"
+                    app:layout_constraintTop_toBottomOf="@id/fillBefore" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startRepeatAnimation">
+
+                <View
+                    android:id="@+id/no_repeat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#0000ff"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/no_repeat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="no_repeat"
+                    app:layout_constraintLeft_toLeftOf="@id/no_repeat"
+                    app:layout_constraintRight_toRightOf="@id/no_repeat"
+                    app:layout_constraintTop_toBottomOf="@id/no_repeat" />
+
+                <View
+                    android:id="@+id/repeat_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0000ff"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/no_repeat_title" />
+
+                <TextView
+                    android:id="@+id/repeat_5_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="repeat_5"
+                    app:layout_constraintLeft_toLeftOf="@id/repeat_5"
+                    app:layout_constraintRight_toRightOf="@id/repeat_5"
+                    app:layout_constraintTop_toBottomOf="@id/repeat_5" />
+
+                <View
+                    android:id="@+id/normal_repeat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0000ff"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/repeat_5_title" />
+
+                <TextView
+                    android:id="@+id/normal_repeat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="normal_repeat"
+                    app:layout_constraintLeft_toLeftOf="@id/normal_repeat"
+                    app:layout_constraintRight_toRightOf="@id/normal_repeat"
+                    app:layout_constraintTop_toBottomOf="@id/normal_repeat" />
+
+                <View
+                    android:id="@+id/revert_repeat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0000ff"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/normal_repeat_title" />
+
+                <TextView
+                    android:id="@+id/revert_repeat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="revert_repeat"
+                    app:layout_constraintLeft_toLeftOf="@id/revert_repeat"
+                    app:layout_constraintRight_toRightOf="@id/revert_repeat"
+                    app:layout_constraintTop_toBottomOf="@id/revert_repeat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
