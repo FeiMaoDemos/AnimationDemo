@@ -35,4 +35,11 @@ class TweenAnimationActivity : AppCompatActivity() {
     fun thirdPartyTweenAnimation(view: View) {
         gotoActivity(ThirdPartyTweenAnimationActivity::class.java)
     }
+
+    /**
+     * 启动补间动画回调的演示页面
+     * */
+    fun animationCallback(view: View) {
+        gotoActivity(AnimationCallbackActivity::class.java)
+    }
 }

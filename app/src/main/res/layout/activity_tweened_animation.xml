@@ -32,7 +32,6 @@
             android:onClick="base"
             android:text="基本属性" />
 
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -40,14 +39,19 @@
             android:onClick="baseTweenAnimation"
             android:text="基础补间动画演示" />
 
-
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
             android:onClick="thirdPartyTweenAnimation"
             android:text="自定义补间动画演示" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="animationCallback"
+            android:text="补间动画监听演示" />
 
     </LinearLayout>
 
